@@ -95,6 +95,7 @@ export default function Tables() {
 
     return (
         <Container>
+            <h2>Socios</h2>
             {/* Selector para elegir entre Todos, Socios o Abonados */}
             <select onChange={handleUrlChange} defaultValue="todos">
                 <option value="todos">Todos</option>

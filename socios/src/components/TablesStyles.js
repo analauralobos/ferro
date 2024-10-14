@@ -32,7 +32,7 @@ export const Container = styled.div`
     font-size: 16px;
   }
 
-  button {
+  button {    
     padding: 10px;
     cursor: pointer;
     background-color: #4CAF50;
@@ -42,8 +42,9 @@ export const Container = styled.div`
     font-size: 16px;
     transition: background-color 0.3s;
 
-    &:hover {
+    &:hover {      
       background-color: #45a049;
+      //background-color: black;
     }
   }
 `;
@@ -53,6 +54,7 @@ export const TableContainer = styled.div`
   width: 100%;
   overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
   margin-top: 20px; /* Espacio superior para separar de los elementos anteriores */
+  margin-bottom: 20px;
 `;
 
 export const Table = styled.table`

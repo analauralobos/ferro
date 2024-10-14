@@ -120,6 +120,7 @@ export default function Pagos() {
                     </div>
                 )}
             </TableContainer>
+
         </Container>
     );
 }

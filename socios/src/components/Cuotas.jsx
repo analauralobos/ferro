@@ -115,7 +115,7 @@ export default function Cuotas() {
 
     return (
         <Container>
-            <h2>Agregar Nueva Cuota</h2>
+            <h2>Cuotas Activas</h2>
             <div>
                 <input
                     type="text"
@@ -228,20 +228,21 @@ export default function Cuotas() {
                                 ))}
                             </TableBody>
                         </Table>
-
-                        {/* Paginación */}
-                        <div className="pagination">
-                            <button onClick={handlePrev} disabled={i === 0}>
-                                Anterior
-                            </button>
-                            <button
-                                onClick={handleNext}
-                                disabled={(i + 10) >= cuotas.length}
-                            >
-                                Siguiente
-                            </button>
-                        </div>
                     </TableContainer>
+
+                    {/* Paginación */}
+                    <div className="pagination">
+                        <button onClick={handlePrev} disabled={i === 0}>
+                            Anterior
+                        </button>
+                        <button
+                            onClick={handleNext}
+                            disabled={(i + 10) >= cuotas.length}
+                        >
+                            Siguiente
+                        </button>
+                    </div>
+
                 </>
             ) : (
                 <p>No hay cuotas disponibles.</p>

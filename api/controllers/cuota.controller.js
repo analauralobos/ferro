@@ -12,7 +12,6 @@ exports.findAll = (req, res) => {
         }
     });
 };
-
 // Obtener una cuota por ID
 exports.findOne = (req, res) => {
     Cuota.findById(req.params.id, (err, data) => {
